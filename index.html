@@ -7,143 +7,115 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <style>
-        body {
-            margin: 0;
-            font-family: Arial;
-        }
+        body { margin:0; font-family: Arial; }
 
-        /* Navbar */
+        /* NAVBAR */
         .navbar {
-            background: #0a1f44;
-            padding: 10px 20px;
-            display: flex;
-            align-items: center;
+            background:#0a1f44;
+            padding:10px 20px;
+            display:flex;
+            align-items:center;
         }
 
-        .logo {
-            display: flex;
-            align-items: center;
-        }
+        .logo { display:flex; align-items:center; }
+        .logo img { height:60px; margin-right:10px; }
+        .logo span { color:#ff6600; font-size:20px; font-weight:bold; }
 
-        .logo img {
-            height: 60px;
-            margin-right: 10px;
-        }
-
-        .logo span {
-            color: orange;
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        /* Hero */
+        /* HERO */
         .hero {
-            background: linear-gradient(rgba(10,31,68,0.8), rgba(10,31,68,0.9)), url('poster.jpg');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
+            background:linear-gradient(rgba(10,31,68,0.8),rgba(10,31,68,0.9)),url('poster.jpg');
+            background-size:cover;
+            background-position:center;
+            color:white;
+            text-align:center;
+            padding:100px 20px;
         }
 
         .btn {
-            background: orange;
-            padding: 10px 20px;
-            text-decoration: none;
-            color: black;
-            border-radius: 5px;
+            background:#ff6600;
+            padding:10px 20px;
+            color:white;
+            text-decoration:none;
+            border-radius:5px;
         }
 
-        section {
-            padding: 50px;
-            text-align: center;
+        section { padding:50px; text-align:center; }
+        h2 { color:#0a1f44; }
+
+        /* COURSES */
+        .course-list {
+            max-width:600px;
+            margin:auto;
+            text-align:left;
         }
 
-        h2 {
-            color: #0a1f44;
+        .course-list li {
+            padding:10px;
+            border-bottom:1px solid #ddd;
         }
 
-        /* Courses */
-        .courses {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
+        .course-list i {
+            color:#ff6600;
+            margin-right:8px;
         }
 
-        .course-box {
-            border: 1px solid #ddd;
-            padding: 10px;
-        }
-
-        .course-box img {
-            width: 100%;
-            height: 200px;
-            object-fit: contain;
-        }
-
-        /* Gallery */
+        /* GALLERY */
         .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 10px;
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:10px;
         }
 
         .gallery img {
-            width: 100%;
-            height: 200px;
-            object-fit: contain;
-            background: black;
+            width:100%;
+            height:220px;
+            object-fit:contain;
+            background:black;
         }
 
-        /* Contact */
-        .contact {
-            background: #0a1f44;
-            color: white;
-        }
+        /* CONTACT */
+        .contact { background:#0a1f44; color:white; }
 
-        iframe {
-            width: 100%;
-            height: 300px;
-            border: 0;
-        }
+        iframe { width:100%; height:300px; border:0; }
 
-        input, select {
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0;
+        input, select, textarea {
+            width:100%;
+            padding:10px;
+            margin:5px 0;
         }
 
         button {
-            background: orange;
-            padding: 10px;
-            border: none;
-            width: 100%;
+            background:#ff6600;
+            color:white;
+            padding:10px;
+            border:none;
+            width:100%;
         }
 
-        /* WhatsApp */
+        /* WHATSAPP */
         .whatsapp {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: #25D366;
-            color: white;
-            padding: 15px;
-            border-radius: 50%;
-            font-size: 25px;
+            position:fixed;
+            bottom:20px;
+            right:20px;
+            background:#25D366;
+            color:white;
+            padding:15px;
+            border-radius:50%;
+            font-size:25px;
         }
 
         footer {
-            background: black;
-            color: white;
-            text-align: center;
-            padding: 10px;
+            background:black;
+            color:white;
+            text-align:center;
+            padding:10px;
         }
     </style>
 </head>
 
 <body>
 
-<!-- Navbar -->
+<!-- NAVBAR -->
 <div class="navbar">
     <div class="logo">
         <img src="logo.jpg">
@@ -151,7 +123,7 @@
     </div>
 </div>
 
-<!-- Hero -->
+<!-- HERO -->
 <div class="hero">
     <h2>Learn Computer Skills for Your Future</h2>
     <p>All Courses with Government Certificate</p>
@@ -159,34 +131,30 @@
     <a href="#contact" class="btn">Join Now</a>
 </div>
 
-<!-- Courses -->
+<!-- COURSES -->
 <section>
     <h2>Our Courses</h2>
 
-    <div class="courses">
-        <div class="course-box">
-            <img src="accounting.jpg">
-            <p>Tally & Accounting</p>
-        </div>
-
-        <div class="course-box">
-            <img src="programing.jpg">
-            <p>Programming (Java, Python, C++)</p>
-        </div>
-
-        <div class="course-box">
-            <img src="design.jpg">
-            <p>Design (CorelDraw, Photoshop)</p>
-        </div>
-
-        <div class="course-box">
-            <img src="tally.jpg">
-            <p>Advance Tally</p>
-        </div>
-    </div>
+    <ul class="course-list">
+        <li><i class="fa-solid fa-computer"></i> Klick Basic Computer Course</li>
+        <li><i class="fa-solid fa-file-word"></i> Klick MS Office</li>
+        <li><i class="fa-solid fa-calculator"></i> Klick Tally Prime with GST</li>
+        <li><i class="fa-solid fa-chart-line"></i> Klick Advance Tally Prime with GST</li>
+        <li><i class="fa-solid fa-chart-pie"></i> Klick Advance TallyPro</li>
+        <li><i class="fa-solid fa-file-excel"></i> Klick Advance Excel</li>
+        <li><i class="fa-brands fa-java"></i> Klick Java</li>
+        <li><i class="fa-brands fa-python"></i> Klick Python</li>
+        <li><i class="fa-solid fa-code"></i> Klick C</li>
+        <li><i class="fa-solid fa-laptop-code"></i> Klick C++</li>
+        <li><i class="fa-solid fa-pen-nib"></i> Klick CorelDraw / Adobe</li>
+        <li><i class="fa-solid fa-image"></i> Klick Photoshop</li>
+        <li><i class="fa-solid fa-video"></i> Klick Video Editing</li>
+        <li><i class="fa-solid fa-globe"></i> Klick Web Designing</li>
+        <li><i class="fa-solid fa-star"></i> And Many More...</li>
+    </ul>
 </section>
 
-<!-- Gallery -->
+<!-- GALLERY -->
 <section>
     <h2>Our Classes</h2>
 
@@ -197,19 +165,13 @@
     </div>
 </section>
 
-<!-- Contact -->
+<!-- CONTACT -->
 <section class="contact" id="contact">
     <h2>Contact Us</h2>
 
     <p>📍 Shirke Sadan, Ganeshwadi, Behind Ganesh Vidya Mandir School, Kolsewadi, Kalyan East - 421306</p>
-
     <p>📞 9022459497 / 9004997929</p>
-
     <p>📧 swastikcomputerskalyan@gmail.com</p>
-
-    <a href="https://maps.google.com/?q=Swastik+Computer+Institute+Kalyan" target="_blank" class="btn">
-        View Location on Map
-    </a>
 
     <h3>Enquiry Form</h3>
 
@@ -224,16 +186,22 @@
             <option>Tally</option>
             <option>Excel</option>
             <option>Programming</option>
+            <option>Other</option>
         </select>
+
+        <textarea id="message" placeholder="Write your enquiry"></textarea>
 
         <button type="submit">Submit</button>
     </form>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.1654502998317!2d73.13472517425589!3d19.231619847070565"></iframe>
+    <!-- MAP -->
+    <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.1654502998317!2d73.13472517425589!3d19.231619847070565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be795c4fd1bd0d9%3A0x1e2591a08cfa4c27!2sSwastik%20Computer%20institute!5e0!3m2!1sen!2sin!4v1774699026731!5m2!1sen!2sin">
+    </iframe>
 
 </section>
 
-<!-- WhatsApp -->
+<!-- WHATSAPP -->
 <a href="https://wa.me/918451012454" class="whatsapp">
     <i class="fa-brands fa-whatsapp"></i>
 </a>
@@ -247,13 +215,15 @@ function sendToWhatsApp(){
     var name = document.getElementById("name").value;
     var phone = document.getElementById("phone").value;
     var course = document.getElementById("course").value;
+    var msg = document.getElementById("message").value;
 
-    var message = "New Enquiry:%0A"
-                + "Name: " + name + "%0A"
-                + "Phone: " + phone + "%0A"
-                + "Course: " + course;
+    var text = "New Enquiry:%0A"
+        + "Name: " + name + "%0A"
+        + "Phone: " + phone + "%0A"
+        + "Course: " + course + "%0A"
+        + "Message: " + msg;
 
-    window.open("https://wa.me/918451012454?text=" + message);
+    window.open("https://wa.me/918451012454?text=" + text);
 }
 </script>
 
