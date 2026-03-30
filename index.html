@@ -3,6 +3,9 @@
 <head>
 <title>Swastik Computer Institute</title>
 
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
@@ -14,21 +17,44 @@ body { margin:0; font-family: Arial; }
     padding:10px 20px;
     display:flex;
     align-items:center;
+    justify-content:space-between;
 }
-.logo { display:flex; align-items:center; }
-.logo img { height:60px; margin-right:10px; }
-.logo span { color:#ff6600; font-size:22px; font-weight:bold; }
+
+/* LOGO BOTH SIDE */
+.logo-left, .logo-right {
+    display:flex;
+    align-items:center;
+}
+
+.logo-left img, .logo-right img {
+    height:55px;
+}
+
+/* CENTER NAME */
+.center-name {
+    font-family:'Poppins', sans-serif;
+    color:#ff6600;
+    font-size:24px;
+    font-weight:bold;
+}
 
 /* HERO */
 .hero {
-    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('poster.jpg');
+    background:linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.7)), url('poster.jpg');
     background-size:cover;
     background-position:center;
-    color:white;
     text-align:center;
     padding:120px 20px;
 }
-.hero h2 { color:white; font-size:40px; }
+
+.hero h2 {
+    color:#0a1f44;
+    font-size:40px;
+}
+
+.hero p {
+    color:#333;
+}
 
 .btn {
     background:#ff6600;
@@ -42,7 +68,7 @@ body { margin:0; font-family: Arial; }
 section { padding:50px; text-align:center; }
 h2 { color:#0a1f44; }
 
-/* COURSES LIST */
+/* COURSES */
 .course-list {
     max-width:700px;
     margin:auto;
@@ -127,10 +153,19 @@ footer {
 
 <!-- NAVBAR -->
 <div class="navbar">
-    <div class="logo">
+
+    <div class="logo-left">
         <img src="logo.jpg">
-        <span>Swastik Computer Institute</span>
     </div>
+
+    <div class="center-name">
+        Swastik Computer Institute
+    </div>
+
+    <div class="logo-right">
+        <img src="logo.jpg">
+    </div>
+
 </div>
 
 <!-- HERO -->
@@ -141,7 +176,7 @@ footer {
     <a href="#contact" class="btn">Join Now</a>
 </div>
 
-<!-- COURSES LIST -->
+<!-- COURSES -->
 <section>
     <h2>Our Courses</h2>
 
@@ -160,14 +195,12 @@ footer {
         <li><i class="fa-solid fa-image"></i> Klick Photoshop</li>
         <li><i class="fa-solid fa-video"></i> Klick Video Editing</li>
         <li><i class="fa-solid fa-globe"></i> Klick Web Designing</li>
-        <li><i class="fa-solid fa-star"></i> And Many More...</li>
     </ul>
 </section>
 
-<!-- COURSE PHOTOS -->
+<!-- COURSE IMAGES -->
 <section>
     <h2>Course Highlights</h2>
-
     <div class="course-images">
         <img src="accounting.jpg">
         <img src="programing.jpg">
@@ -179,7 +212,6 @@ footer {
 <!-- GALLERY -->
 <section>
     <h2>Our Classes</h2>
-
     <div class="gallery">
         <img src="office.jpg">
         <img src="interior.jpg">
