@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Swastik Computer Institute</title>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        nav {
+            background: #0a1f44;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav h1 {
+            margin: 0;
+            color: orange;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(10,31,68,0.8), rgba(10,31,68,0.9)),
+            url('poster.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .btn {
+            background: orange;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: black;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #0a1f44;
+        }
+
+        /* Courses */
+        .courses {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .course-box {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        .course-box img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain; /* FULL IMAGE SHOW */
+        }
+
+        /* Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain; /* NO CUT */
+            background: #000;
+        }
+
+        /* Contact */
+        .contact {
+            background: #0a1f44;
+            color: white;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+        }
+
+        /* Form */
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+        }
+
+        button {
+            background: orange;
+            padding: 10px;
+            border: none;
+            width: 100%;
+        }
+
+        /* WhatsApp */
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 25px;
+        }
+
+        footer {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+    <h1><i class="fa-solid fa-computer"></i> Swastik Computer Institute</h1>
+    <p>Government Authorized Institute</p>
+</nav>
+
+<!-- Hero -->
+<div class="hero">
+    <h2>Learn Computer Skills for Your Future</h2>
+    <p>All Courses with Government Certificate</p>
+    <br>
+    <a href="#contact" class="btn">Join Now</a>
+</div>
+
+<!-- Courses -->
+<section>
+    <h2>Our Courses</h2>
+
+    <div class="courses">
+        <div class="course-box">
+            <img src="accounting.jpg">
+            <p>Tally & Accounting</p>
+        </div>
+
+        <div class="course-box">
+            <img src="programing.jpg">
+            <p>Programming (Java, Python, C++)</p>
+        </div>
+
+        <div class="course-box">
+            <img src="design.jpg">
+            <p>Design (CorelDraw, Photoshop)</p>
+        </div>
+
+        <div class="course-box">
+            <img src="tally.jpg">
+            <p>Advance Tally</p>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery -->
+<section>
+    <h2>Our Classes</h2>
+
+    <div class="gallery">
+        <img src="office.jpg">
+        <img src="interior.jpg">
+        <img src="outside.jpg">
+    </div>
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+
+    <p><i class="fa-solid fa-location-dot"></i> Shirke Sadan, Ganeshwadi, Behind Ganesh Vidya Mandir School, Kolsewadi, Kalyan East - 421306</p>
+
+    <p><i class="fa-solid fa-phone"></i> 9022459497 / 9004997929</p>
+
+    <p><i class="fa-solid fa-envelope"></i> swastikcomputerskalyan@gmail.com</p>
+
+    <!-- Map Button -->
+    <a href="https://maps.google.com/?q=Swastik+Computer+Institute+Kalyan" target="_blank" class="btn">
+        View Location on Map
+    </a>
+
+    <h3>Enquiry Form</h3>
+
+    <form onsubmit="sendToWhatsApp(); return false;">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="tel" id="phone" placeholder="Mobile" required>
+
+        <select id="course">
+            <option>Select Course</option>
+            <option>Basic Computer</option>
+            <option>MS Office</option>
+            <option>Tally</option>
+            <option>Excel</option>
+            <option>Programming</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Map -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.1654502998317!2d73.13472517425589!3d19.231619847070565"></iframe>
+
+</section>
+
+<!-- WhatsApp -->
+<a href="https://wa.me/918451012454" class="whatsapp">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<footer>
+    © 2026 Swastik Computer Institute
+</footer>
+
+<script>
+function sendToWhatsApp(){
+    var name = document.getElementById("name").value;
+    var phone = document.getElementById("phone").value;
+    var course = document.getElementById("course").value;
+
+    var message = "New Enquiry:%0A"
+                + "Name: " + name + "%0A"
+                + "Phone: " + phone + "%0A"
+                + "Course: " + course;
+
+    window.open("https://wa.me/918451012454?text=" + message);
+}
+</script>
+
+</body>
+</html>
