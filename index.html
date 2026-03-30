@@ -3,7 +3,6 @@
 <head>
     <title>Swastik Computer Institute</title>
 
-    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <style>
@@ -31,6 +30,8 @@
             padding:100px 20px;
         }
 
+        .hero h2 { color:white; }
+
         .btn {
             background:#ff6600;
             padding:10px 20px;
@@ -42,21 +43,32 @@
         section { padding:50px; text-align:center; }
         h2 { color:#0a1f44; }
 
-        /* COURSES */
-        .course-list {
-            max-width:600px;
-            margin:auto;
-            text-align:left;
+        /* COURSE BOX */
+        .courses {
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:15px;
         }
 
-        .course-list li {
+        .course-box {
+            border:1px solid #ddd;
             padding:10px;
-            border-bottom:1px solid #ddd;
         }
 
-        .course-list i {
+        .course-box img {
+            width:100%;
+            height:180px;
+            object-fit:contain;
+            background:black;
+        }
+
+        .course-box p {
+            margin-top:10px;
+            font-weight:bold;
+        }
+
+        .course-box i {
             color:#ff6600;
-            margin-right:8px;
         }
 
         /* GALLERY */
@@ -131,26 +143,48 @@
     <a href="#contact" class="btn">Join Now</a>
 </div>
 
-<!-- COURSES -->
+<!-- COURSES WITH IMAGES -->
 <section>
     <h2>Our Courses</h2>
 
-    <ul class="course-list">
-        <li><i class="fa-solid fa-computer"></i> Klick Basic Computer Course</li>
-        <li><i class="fa-solid fa-file-word"></i> Klick MS Office</li>
-        <li><i class="fa-solid fa-calculator"></i> Klick Tally Prime with GST</li>
-        <li><i class="fa-solid fa-chart-line"></i> Klick Advance Tally Prime with GST</li>
-        <li><i class="fa-solid fa-chart-pie"></i> Klick Advance TallyPro</li>
-        <li><i class="fa-solid fa-file-excel"></i> Klick Advance Excel</li>
-        <li><i class="fa-brands fa-java"></i> Klick Java</li>
-        <li><i class="fa-brands fa-python"></i> Klick Python</li>
-        <li><i class="fa-solid fa-code"></i> Klick C</li>
-        <li><i class="fa-solid fa-laptop-code"></i> Klick C++</li>
-        <li><i class="fa-solid fa-pen-nib"></i> Klick CorelDraw / Adobe</li>
-        <li><i class="fa-solid fa-image"></i> Klick Photoshop</li>
-        <li><i class="fa-solid fa-video"></i> Klick Video Editing</li>
-        <li><i class="fa-solid fa-globe"></i> Klick Web Designing</li>
-        <li><i class="fa-solid fa-star"></i> And Many More...</li>
+    <div class="courses">
+
+        <div class="course-box">
+            <img src="accounting.jpg">
+            <p><i class="fa-solid fa-calculator"></i> Klick Tally & Accounting</p>
+        </div>
+
+        <div class="course-box">
+            <img src="programing.jpg">
+            <p><i class="fa-solid fa-code"></i> Klick Programming</p>
+        </div>
+
+        <div class="course-box">
+            <img src="design.jpg">
+            <p><i class="fa-solid fa-pen-nib"></i> Klick Designing</p>
+        </div>
+
+        <div class="course-box">
+            <img src="tally.jpg">
+            <p><i class="fa-solid fa-chart-line"></i> Klick Advance Tally</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- COURSE LIST -->
+<section>
+    <h2>All Courses</h2>
+
+    <ul style="text-align:left; max-width:600px; margin:auto;">
+        <li>Klick Basic Computer Course</li>
+        <li>Klick MS Office</li>
+        <li>Klick Tally Prime with GST</li>
+        <li>Klick Advance Excel</li>
+        <li>Klick Java / Python / C / C++</li>
+        <li>Klick CorelDraw / Photoshop</li>
+        <li>Klick Video Editing</li>
+        <li>Klick Web Designing</li>
     </ul>
 </section>
 
@@ -169,7 +203,7 @@
 <section class="contact" id="contact">
     <h2>Contact Us</h2>
 
-    <p>📍 Shirke Sadan, Ganeshwadi, Behind Ganesh Vidya Mandir School, Kolsewadi, Kalyan East - 421306</p>
+    <p>📍 Shirke Sadan, Ganeshwadi, Kolsewadi, Kalyan East - 421306</p>
     <p>📞 9022459497 / 9004997929</p>
     <p>📧 swastikcomputerskalyan@gmail.com</p>
 
@@ -195,9 +229,7 @@
     </form>
 
     <!-- MAP -->
-    <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.1654502998317!2d73.13472517425589!3d19.231619847070565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be795c4fd1bd0d9%3A0x1e2591a08cfa4c27!2sSwastik%20Computer%20institute!5e0!3m2!1sen!2sin!4v1774699026731!5m2!1sen!2sin">
-    </iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.1654502998317!2d73.13472517425589!3d19.231619847070565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be795c4fd1bd0d9%3A0x1e2591a08cfa4c27!2sSwastik%20Computer%20institute!5e0!3m2!1sen!2sin!4v1774699026731!5m2!1sen!2sin"></iframe>
 
 </section>
 
