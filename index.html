@@ -31,17 +31,13 @@ body { margin:0; font-family: Arial; }
     text-align:center;
 }
 
-/* HERO FULL SCREEN */
+/* HERO */
 .hero {
     background:linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.7)), url('poster.jpg');
     background-size:cover;
     background-position:center;
-    height:100vh;   /* 🔥 FULL SCREEN */
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
     text-align:center;
+    padding:120px 20px;
 }
 
 .hero h2 {
@@ -94,7 +90,7 @@ h2 { color:#0a1f44; }
     width:100%;
     height:200px;
     object-fit:contain;
-    background:white;
+    background:white; /* ✅ FIX */
 }
 
 /* GALLERY */
@@ -107,7 +103,7 @@ h2 { color:#0a1f44; }
     width:100%;
     height:220px;
     object-fit:contain;
-    background:white;
+    background:white; /* ✅ FIX */
 }
 
 /* CONTACT */
@@ -167,7 +163,9 @@ footer {
 
 <div class="hero">
     <h2>Learn Computer Skills for Your Future</h2>
+
     <p>All Courses with Government Certificate</p>
+
     <br>
     <a href="#contact" class="btn">Join Now</a>
 </div>
