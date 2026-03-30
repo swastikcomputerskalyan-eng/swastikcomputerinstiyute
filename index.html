@@ -12,21 +12,33 @@
             font-family: Arial;
         }
 
-        nav {
+        /* Navbar */
+        .navbar {
             background: #0a1f44;
-            color: white;
-            padding: 15px;
-            text-align: center;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
         }
 
-        nav h1 {
-            margin: 0;
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 60px;
+            margin-right: 10px;
+        }
+
+        .logo span {
             color: orange;
+            font-size: 20px;
+            font-weight: bold;
         }
 
+        /* Hero */
         .hero {
-            background: linear-gradient(rgba(10,31,68,0.8), rgba(10,31,68,0.9)),
-            url('poster.jpg');
+            background: linear-gradient(rgba(10,31,68,0.8), rgba(10,31,68,0.9)), url('poster.jpg');
             background-size: cover;
             background-position: center;
             color: white;
@@ -59,7 +71,6 @@
         }
 
         .course-box {
-            background: white;
             border: 1px solid #ddd;
             padding: 10px;
         }
@@ -67,7 +78,7 @@
         .course-box img {
             width: 100%;
             height: 200px;
-            object-fit: contain; /* FULL IMAGE SHOW */
+            object-fit: contain;
         }
 
         /* Gallery */
@@ -80,8 +91,8 @@
         .gallery img {
             width: 100%;
             height: 200px;
-            object-fit: contain; /* NO CUT */
-            background: #000;
+            object-fit: contain;
+            background: black;
         }
 
         /* Contact */
@@ -96,7 +107,6 @@
             border: 0;
         }
 
-        /* Form */
         input, select {
             width: 100%;
             padding: 10px;
@@ -134,10 +144,12 @@
 <body>
 
 <!-- Navbar -->
-<nav>
-    <h1><i class="fa-solid fa-computer"></i> Swastik Computer Institute</h1>
-    <p>Government Authorized Institute</p>
-</nav>
+<div class="navbar">
+    <div class="logo">
+        <img src="logo.jpg">
+        <span>Swastik Computer Institute</span>
+    </div>
+</div>
 
 <!-- Hero -->
 <div class="hero">
@@ -189,13 +201,12 @@
 <section class="contact" id="contact">
     <h2>Contact Us</h2>
 
-    <p><i class="fa-solid fa-location-dot"></i> Shirke Sadan, Ganeshwadi, Behind Ganesh Vidya Mandir School, Kolsewadi, Kalyan East - 421306</p>
+    <p>📍 Shirke Sadan, Ganeshwadi, Behind Ganesh Vidya Mandir School, Kolsewadi, Kalyan East - 421306</p>
 
-    <p><i class="fa-solid fa-phone"></i> 9022459497 / 9004997929</p>
+    <p>📞 9022459497 / 9004997929</p>
 
-    <p><i class="fa-solid fa-envelope"></i> swastikcomputerskalyan@gmail.com</p>
+    <p>📧 swastikcomputerskalyan@gmail.com</p>
 
-    <!-- Map Button -->
     <a href="https://maps.google.com/?q=Swastik+Computer+Institute+Kalyan" target="_blank" class="btn">
         View Location on Map
     </a>
@@ -218,7 +229,6 @@
         <button type="submit">Submit</button>
     </form>
 
-    <!-- Map -->
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.1654502998317!2d73.13472517425589!3d19.231619847070565"></iframe>
 
 </section>
